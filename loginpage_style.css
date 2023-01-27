@@ -91,6 +91,7 @@ input[type="radio"]{
     padding: 0;
 }
 
+
 .select-container{
     display: inline-block;
     margin: 0 0 1.2em;
@@ -102,12 +103,11 @@ input[type="radio"]{
     background: none;
     border: 2px solid #EDEFF0;
     position: auto;
-    height: 21%;
-    width: auto;
+    height: 40px;
+    width: 150px;
     padding: .5em;
     appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+
 }
 
 .select-container select::-ms-expand{
@@ -128,8 +128,6 @@ input[type="radio"]{
     width: 12px;
     height: 12px;
     padding: 6px;
-    -webkit-transform: translateY(-50%) rotate(90deg);
-    transform: translateY(-50%) rotate(90deg);
 }
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
@@ -145,7 +143,7 @@ hr{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid hsl(0, 0%, 80%);
+    border-top: 1px solid hsl(0, 2%, 42%);
     margin: 1em 0;
     padding: 0;
 }
@@ -274,7 +272,7 @@ input[type=number]::-webkit-outer-spin-button{
     background: -webkit-gradient(linear, left top, left bottom, from(#61BD4F), to(#5AAC44));
     background: linear-gradient(to bottom, #61BD4F 0%, #5AAC44 100%);
     box-shadow: 0 2px 0 #3F6F21;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .button-green:not([disabled]):focus,
@@ -384,7 +382,7 @@ footer li a:visited{
 }
 
 .main{
-    background-color: #f9fafc;
+    /* background-color: #f9fafc; */
     font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     /* position: relative; */
     /* display: flex; */
@@ -431,10 +429,8 @@ footer li a:visited{
 }
 
 .main .inner-section .account-form .login-method-separator{
-    text-align: center;
     font-size: 12px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 12px;
 }
 
 .main .inner-section .account-form {
@@ -453,7 +449,8 @@ footer li a:visited{
 }
 
 .main .inner-section .account-form .button-green{
-    box-shadow: none;
+    /* box-shadow: none; */
+    padding: 1px;
 }
 
 .main .inner-section .account-form .button-green:not(:disabled){
@@ -468,14 +465,14 @@ footer li a:visited{
     background: #fff;
     color: rgba(0, 0, 0, 0.54);
     box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0;
-    border-color: transparent;
-    text-align: center;
-    border-radius: 3px;
+    /* border-color: transparent; */
+    /* text-align: center; */
+    /* border-radius: 3px; */
     width: 99%;
     height: 39px;
-    padding-top: 0;
-    margin-bottom: 12px;
-    display: block;
+    /* padding-top: 0; */
+    /* margin-bottom: 12px; */
+    /* display: block; */
     text-decoration: none;
     -webkit-transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
     transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
@@ -492,27 +489,27 @@ footer li a:visited{
 }
 
 .main .inner-section .account-form .logo-button span.label{
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
     font-size: 14px;
     font-family: inherit;
     font-weight: bold;
-    color: #505f79;
+    /* color: #505f79; */
     padding: 3px;
     height: 32px;
     line-height: 32px;
 }
 
 .main .inner-section .account-form .logo-button span.icon{
-    display: inline-block;
-    border-radius: 1px;
+    /* display: inline-block; */
+    /* border-radius: 1px; */
     width: 18px;
     height: 18px;
     vertical-align: middle;
 }
 
 .main .inner-section .account-form #google-icon{
-        background: url('images/google-logo.svg') 0 50% no-repeat;
+        background: url('images/google-logo.svg');
 }
 
 .main .inner-section .account-form #msft-icon{
@@ -544,16 +541,18 @@ footer li a:visited{
 .main .inner-section .bottom-link{
     /* text-align: center; */
     font-size: 14px;
-    display: block;
+    /* display: block; */
+    margin: 15px;
+    /* padding: 8px; */
 }
 
 .main .inner-section .bottom-link.smaller-links {
     font-size: 12px;
-    margin: 17px 74px;
+    /* margin: 17px 74px; */
 }
 
 .main .inner-section .bottom-link li{
-    display: inline-block;
+    /* display: inline-block; */
     list-style: none;
 }
 
@@ -585,13 +584,13 @@ footer li a:visited{
     /* color: #5e6c84; */
     font-size: 16px;
     letter-spacing: -0.01em;
-    line-height: 28px;
+    /* line-height: 28px; */
     margin-top: 10px;
     /* margin-bottom: 25px; */
 }
 
 .main .inner-section hr{
-    margin-top: 19.5px;
+    margin-top: 25px;
 }
 
 .main .background{
@@ -623,22 +622,17 @@ footer li a:visited{
 }
 
 .main .main-footer{
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     font-size: 14px;
     line-height: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
-.main .main-footer a{
+.main .main-footer.a{
     text-decoration: none;
     color: #5e6c84;
 }
 
-.main .main-footer a:hover,
-.main .main-footer a:hover:visited{
-    text-decoration: underline;
-    color: #5e6c84;
-}
 
 .main .main-footer .select-container{
     background-color: transparent;
